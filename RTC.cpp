@@ -5,6 +5,12 @@ void DS1307_RTC::init() {
     Serial.println("Error initializing RTC");
     delay(1000);
   }
+
+  if (!RTC.isrunning()) {
+    Serial.println("Setting clock time with the date and time of the computer");
+    RTC.adjust(DateTime(F(__DATE__), F(__TIME__))); 
+  }
+
   Serial.println("RTC initialized"); 
 }
 
