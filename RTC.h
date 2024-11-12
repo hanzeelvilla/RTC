@@ -12,9 +12,14 @@ Adafruit BusIO:  To load and configure certain elements of the Adafruit electron
 
 class DS1307_RTC {
   public:
-  RTC_DS1307 RTC;
-
   void init();
+  DateTime get_time();
+  String formated_date(char sep = '/'); // sep -> separator
+  String formated_time(char sep = ':');
+  String formated_fullDate(char sepDate = '/', char sepTime = ':', char sepEspace = ' ');
+
+  private:
+    RTC_DS1307 RTC;
 };
 
 #endif

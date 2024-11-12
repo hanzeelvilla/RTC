@@ -8,4 +8,14 @@ void setup() {
 }
 
 void loop() {
+  // DateTime time = rtc.get_time();
+  String textDate = rtc.formated_date();
+  Serial.println(textDate);
+
+  String textTime = rtc.formated_time();
+  Serial.println(textTime);
+
+  String fullTime = rtc.formated_fullDate();
+  Serial.println(fullTime);
+  delay(1000);
 }
