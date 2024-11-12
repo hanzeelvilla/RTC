@@ -8,7 +8,8 @@ void setup() {
 }
 
 void loop() {
-  // DateTime time = rtc.get_time();
+  DateTime time = rtc.get_time(); // all time data is based in this method
+
   String textDate = rtc.formated_date();
   Serial.println(textDate);
 
