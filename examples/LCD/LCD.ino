@@ -1,4 +1,4 @@
-#include "RTC.h"
+#include "DS1307_RTC.h"
 #include <LiquidCrystal_I2C.h>
 
 DS1307_RTC rtc;

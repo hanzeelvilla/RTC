@@ -1,4 +1,4 @@
-#include "RTC.h"
+#include "DS1307_RTC.h"
 
 DS1307_RTC rtc;
 

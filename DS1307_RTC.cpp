@@ -1,4 +1,4 @@
-#include "RTC.h"
+#include "DS1307_RTC.h"
 
 void DS1307_RTC::init() {
   while (!RTC.begin()) {
