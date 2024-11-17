@@ -28,7 +28,7 @@ Connect the DS1307 RTC module to your microcontroller using the I2C interface:
 * **GND** to GND.
 
 ###  Include the Library in Your Code
-In your Arduino code, include the RTC.h file and create an instance of the DS1307_RTC class.
+In your Arduino code, include the DS1307_RTC.h file and create an instance of the DS1307_RTC class.
 
 ```
 #include "DS1307_RTC.h"
